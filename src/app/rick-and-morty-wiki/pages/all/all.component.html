@@ -1,0 +1,13 @@
+<div class="cards-container">
+  <div class="card-w"
+       *ngFor="let character of characters">
+    <app-card-character
+      class="card-w"
+      [character]="character">
+    </app-card-character>
+  </div>
+</div>
+<app-pager
+  [pages]="pagesCharacters"
+  [route]="''"
+  ></app-pager>

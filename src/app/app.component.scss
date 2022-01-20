@@ -1,0 +1,16 @@
+@import '_shared';
+
+header {
+  min-height: 14rem;
+}
+main {
+  min-height: 526px;
+  padding: 40px 20px;
+  background-color: $bg-main;
+}
+footer {
+  min-height: 110px;
+  display: grid;
+  place-items: center;
+  background-color: $title-color;
+}

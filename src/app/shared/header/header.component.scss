@@ -1,0 +1,27 @@
+@import '_shared';
+
+.header__content {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 14rem;
+  height: 100%;
+}
+.header__content h1 {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3rem;
+  text-align: center;
+}
+.header__content h1 span {
+  color: $primary-color;
+}
+.header__content img {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 61.5px);
+  z-index: -1;
+}

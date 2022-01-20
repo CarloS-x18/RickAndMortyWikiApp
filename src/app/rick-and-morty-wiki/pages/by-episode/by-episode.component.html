@@ -1,0 +1,13 @@
+<h2 class="episodes-title">Episodes</h2>
+<div class="cards-episodes-container">
+  <div *ngFor="let episode of episodes, let i = index">
+    <app-card-episode
+      [episode]="episode"
+      [index]="i">
+    </app-card-episode>
+  </div>
+</div>
+<app-pager
+  [pages]="pagesEpisodes"
+  [route]="'episodes'"
+  ></app-pager>

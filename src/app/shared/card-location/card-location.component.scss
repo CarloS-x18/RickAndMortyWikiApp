@@ -1,0 +1,40 @@
+@import '_shared';
+
+.card-location {
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-card-character;
+  border-radius: 6px;
+  cursor: pointer;
+
+  .location-title {
+    width: 50%;
+  }
+
+  .location-title h3 {
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  .location-info {
+    text-align: end;
+  }
+
+  .location-info p:nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: $primary-color;
+
+    span {
+      color: #adadad;
+    }
+  }
+
+  .location-info p:nth-child(2) {
+    font-size: 1.4rem;
+    color: $text-dimension;
+  }
+
+}

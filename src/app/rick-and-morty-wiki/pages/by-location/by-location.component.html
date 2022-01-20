@@ -1,0 +1,12 @@
+<h2 class="locations-title">Locations</h2>
+<div class="cards-locations-container">
+  <div *ngFor="let location of locations">
+    <app-card-location
+      [location]="location">
+    </app-card-location>
+  </div>
+</div>
+<app-pager
+  [pages]="pagesLocations"
+  [route]="'location'"
+  ></app-pager>

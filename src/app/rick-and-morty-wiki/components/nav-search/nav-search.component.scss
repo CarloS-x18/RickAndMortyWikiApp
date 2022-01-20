@@ -1,0 +1,35 @@
+@import 'shared';
+
+.buttons-container {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  list-style: none;
+
+  li {
+    width: calc( 100% / 3 );
+    height: 40px;
+    display: grid;
+    place-content: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $primary-color;
+    text-decoration: none;
+    background-color: $bg-btn-search;
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  .active {
+    color: white;
+    background-color: $primary-color;
+  }
+}

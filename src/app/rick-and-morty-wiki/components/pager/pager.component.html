@@ -1,0 +1,8 @@
+<ul class="pager">
+  <li id="pageElement"
+    *ngFor="let page of pages; let isFirst = first"
+    [ngClass]="{pageSelect: isFirst}"
+    (click)="changePage( page, route, $event )">
+    {{ page }}
+  </li>
+</ul>

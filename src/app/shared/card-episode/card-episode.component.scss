@@ -1,0 +1,33 @@
+@import '_shared';
+
+.card-episode {
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-card-character;
+  border-radius: 6px;
+  cursor: pointer;
+
+  .episode-title {
+    width: 50%;
+  }
+
+  .episode-title p {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: $primary-color;
+  }
+
+  .episode-title h3 {
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  .episode-info  {
+    font-size: 1.4rem;
+    color: #adadad;
+    text-align: end;
+  }
+
+}

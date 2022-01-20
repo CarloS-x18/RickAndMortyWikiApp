@@ -1,0 +1,22 @@
+@import '_shared';
+
+.card-character {
+  width: 100%;
+  background-color: $bg-card-character;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    margin: 5px 0;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+  }
+}
