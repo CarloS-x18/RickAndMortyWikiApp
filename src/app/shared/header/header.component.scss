@@ -5,8 +5,11 @@
   display: grid;
   place-items: center;
   width: 100%;
-  min-height: 14rem;
-  height: 100%;
+  min-height: 140px;
+
+  @media (min-width: 920px) {
+    height: 280px;
+  }
 }
 .header__content h1 {
   width: 80%;
@@ -15,6 +18,10 @@
   font-weight: 900;
   line-height: 3rem;
   text-align: center;
+
+  @media (min-width: 920px) {
+    font-size: 6rem;
+  }
 }
 .header__content h1 span {
   color: $primary-color;
@@ -24,4 +31,9 @@
   bottom: 0;
   left: calc(50% - 61.5px);
   z-index: -1;
+
+  @media (min-width: 920px) {
+    width: 220px;
+    left: calc(50% - 110px);
+  }
 }

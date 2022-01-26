@@ -5,6 +5,8 @@
   color: white;
 }
 .cards-locations-container {
+  max-width: 750px;
+  margin: 0 auto;
   display: grid;
   gap: 16px;
 }

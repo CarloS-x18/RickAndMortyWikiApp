@@ -10,15 +10,30 @@ import { APIDataEpisodes, Episode } from '../interfaces/episodes.interface';
 })
 export class CharactersService {
 
+  public charactersSearch: Character[] = [];
   public characters: Character[] = [];
   public locations: Location[] = [];
   public episodes: Episode[] = [];
 
   public pages: number[] = [];
 
+  public searchToggle: boolean = false;
+
   private apiUrl: string = 'https://rickandmortyapi.com/api';
 
   constructor( private http: HttpClient ) { }
+
+  getCharacters( page: number, termino: string ) {
+    const url = `${ this.apiUrl }/character/?page=${ page }&name=${ termino }`;
+
+    this.http.get<APIData>(url)
+      .subscribe({
+        next: characters => {
+          this.charactersSearch = characters.results;
+        },
+        error: () => this.charactersSearch = []
+      })
+  }
 
   getAllCharacters( page: number ): void {
     const url = `${ this.apiUrl }/character?page=${ page }`;

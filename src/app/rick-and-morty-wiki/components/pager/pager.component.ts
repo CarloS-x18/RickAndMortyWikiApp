@@ -10,6 +10,7 @@ export class PagerComponent {
 
   @Input() pages! : number[];
   @Input() route! : string;
+  @Input() termino!: string;
 
   constructor( private charactersService: CharactersService ){}
 

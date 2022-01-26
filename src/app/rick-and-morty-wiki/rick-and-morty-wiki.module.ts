@@ -10,6 +10,8 @@ import { PagerComponent } from './components/pager/pager.component';
 import { ShowCharecterComponent } from './pages/show-charecter/show-charecter.component';
 import { NavSearchComponent } from './components/nav-search/nav-search.component';
 import { SharedModule } from '../shared/shared.module';
+import { ResultsComponent } from './pages/results/results.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +24,8 @@ import { SharedModule } from '../shared/shared.module';
     SearchInputComponent,
     NavSearchComponent,
     PagerComponent,
-    ShowCharecterComponent
+    ShowCharecterComponent,
+    ResultsComponent
   ],
   exports: [
     AllComponent,
@@ -30,10 +33,12 @@ import { SharedModule } from '../shared/shared.module';
     ByEpisodeComponent,
     NavSearchComponent,
     SearchInputComponent,
-    PagerComponent
+    PagerComponent,
+    ResultsComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule,
     SharedModule
   ]

@@ -1,0 +1,14 @@
+<div class="alert" *ngIf="characters.length === 0">
+  There are no results with that term.
+</div>
+
+
+<div class="cards-container">
+  <div class="card-w"
+       *ngFor="let character of characters">
+    <app-card-character
+      class="card-w"
+      [character]="character">
+    </app-card-character>
+  </div>
+</div>
